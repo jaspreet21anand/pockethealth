@@ -60,3 +60,9 @@ Run options: --seed 59910
 Finished in 1.047347s, 11.4575 runs/s, 22.9150 assertions/s.
 12 runs, 24 assertions, 0 failures, 0 errors, 0 skips
 ```
+
+### Files of interest
+- Model - https://github.com/jaspreet21anand/pockethealth/blob/main/app/models/dicom_file.rb
+- Controller - https://github.com/jaspreet21anand/pockethealth/blob/main/app/controllers/dicom_files_controller.rb
+- Service - https://github.com/jaspreet21anand/pockethealth/blob/main/app/services/dicom_processor.rb
+- TestFiles - https://github.com/jaspreet21anand/pockethealth/tree/main/test
