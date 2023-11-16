@@ -47,8 +47,12 @@ class DicomFile < ApplicationRecord
     end
 
     def extract_and_convert_dicom_image
-      extract_dicom_headers
-      convert_dicom_to_browser_viewable_image
+      begin
+        extract_dicom_headers
+        convert_dicom_to_browser_viewable_image
+      rescue => e
+        # Notify error in parsing
+      end
     end
 
     def dicom_processor

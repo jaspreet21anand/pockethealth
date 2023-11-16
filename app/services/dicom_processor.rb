@@ -21,8 +21,4 @@ class DicomProcessor
     @parsed_dicom || parse
     @parsed_dicom.value(tag)
   end
-
-  def success?
-    @parsed_dicom.nil? ? nil : @parsed_dicom.read_success?
-  end
 end
